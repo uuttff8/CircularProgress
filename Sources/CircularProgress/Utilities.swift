@@ -259,7 +259,7 @@ extension CATextLayer {
 }
 
 
-final class ProgressCircleShapeLayer: CAShapeLayer {
+public final class ProgressCircleShapeLayer: CAShapeLayer {
 	convenience init(radius: Double, center: CGPoint) {
 		self.init()
 		fillColor = nil
