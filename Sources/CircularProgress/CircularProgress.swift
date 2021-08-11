@@ -112,7 +112,9 @@ public final class CircularProgress: NSView {
 		set {
 			assertMainThread()
 
+			willChangeValue(for: \.progress)
 			_progress = newValue.clamped(to: 0...1)
+			didChangeValue(for: \.progress)
 
 			// swiftlint:disable:next trailing_closure
 			CALayer.animate(duration: 0.5, timingFunction: .easeOut, animations: { [weak self] in
