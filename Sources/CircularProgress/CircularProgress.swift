@@ -15,7 +15,7 @@ public final class CircularProgress: NSView {
 		$0.lineWidth = lineWidth / 2
 	}
 
-	private lazy var progressCircle = with(ProgressCircleShapeLayer(radius: Double(radius), center: bounds.center)) {
+	lazy var progressCircle = with(ProgressCircleShapeLayer(radius: Double(radius), center: bounds.center)) {
 		$0.lineWidth = lineWidth
 	}
 
