@@ -2,7 +2,7 @@ import Cocoa
 
 @IBDesignable
 public final class CircularProgress: NSView {
-	private lazy var radius = bounds.width < bounds.height ? bounds.midX * 0.8 : bounds.midY * 0.8
+	public lazy var radius = bounds.width < bounds.height ? bounds.midX * 0.8 : bounds.midY * 0.8
 	private var _progress: Double = 0
 	private var progressObserver: NSKeyValueObservation?
 	private var finishedObserver: NSKeyValueObservation?
