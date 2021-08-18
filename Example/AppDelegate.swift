@@ -26,6 +26,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
 			manualCircularProgress,
 			start: { circularProgress in
 				circularProgress.resetProgress()
+				circularProgress.showPercent = false
 			},
 			tick: { circularProgress in
 				circularProgress.progress += 0.01

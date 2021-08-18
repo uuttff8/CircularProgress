@@ -269,7 +269,7 @@ public final class CircularProgress: NSView {
 
 	private func updateColors() {
 		let duration = 0.2
-		backgroundCircle.animate(\.strokeColor, to: color.withAlpha(0.5), duration: duration)
+		backgroundCircle.animate(\.strokeColor, to: NSColor.white, duration: duration)
 		progressCircle.animate(\.strokeColor, to: color, duration: duration)
 		progressLabel.animate(\.foregroundColor, to: NSColor.white, duration: duration)
 		indeterminateCircle.animate(\.strokeColor, to: color, duration: duration)
