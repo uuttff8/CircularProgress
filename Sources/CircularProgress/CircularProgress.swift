@@ -20,8 +20,8 @@ public final class CircularProgress: NSView {
 	}
 
 	private lazy var progressLabel = with(CATextLayer(text: "0")) {
-		$0.color = color
-		$0.fontSize = bounds.width < bounds.height ? bounds.width * 0.2 : bounds.height * 0.2
+		$0.color = .white
+		$0.fontSize = bounds.width < bounds.height ? bounds.width * 0.4 : bounds.height * 0.4
 		$0.anchorPoint = CGPoint(x: 0.5, y: 0.5)
 		$0.alignmentMode = .center
 		$0.font = NSFont.helveticaNeueLight // Not using the system font as it has too much number width variance
@@ -271,7 +271,7 @@ public final class CircularProgress: NSView {
 		let duration = 0.2
 		backgroundCircle.animate(\.strokeColor, to: color.withAlpha(0.5), duration: duration)
 		progressCircle.animate(\.strokeColor, to: color, duration: duration)
-		progressLabel.animate(\.foregroundColor, to: color, duration: duration)
+		progressLabel.animate(\.foregroundColor, to: NSColor.white, duration: duration)
 		indeterminateCircle.animate(\.strokeColor, to: color, duration: duration)
 
 		cancelButton.textColor = color
