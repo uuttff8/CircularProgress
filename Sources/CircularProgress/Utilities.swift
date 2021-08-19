@@ -181,7 +181,7 @@ extension CALayer {
 
 extension NSFont {
 	static let helveticaNeueLight = NSFont(name: "HelveticaNeue-Light", size: 0)
-	static let helveticaNeueBold = NSFont(name: "HelveticaNeue-Bold", size: 0)
+	static let helveticaNeueMedium = NSFont(name: "HelveticaNeue-Medium", size: 0)
 }
 
 
