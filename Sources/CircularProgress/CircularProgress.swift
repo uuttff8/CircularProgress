@@ -24,7 +24,7 @@ public final class CircularProgress: NSView {
 		$0.fontSize = bounds.width < bounds.height ? bounds.width * 0.4 : bounds.height * 0.4
 		$0.anchorPoint = CGPoint(x: 0.5, y: 0.5)
 		$0.alignmentMode = .center
-		$0.font = NSFont.helveticaNeueMedium // Not using the system font as it has too much number width variance
+		$0.font = NSFont.systemFont(ofSize: 0, weight: .medium) // Not using the system font as it has too much number width variance
 		$0.frame = CGRect(x: 0, y: 0, width: bounds.width, height: $0.preferredFrameSize().height)
 		$0.position = CGPoint(x: bounds.midX, y: bounds.midY)
 		$0.isHidden = true
